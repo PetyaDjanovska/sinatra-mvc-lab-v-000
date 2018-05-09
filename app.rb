@@ -3,6 +3,8 @@ require_relative 'models/piglatinizer.rb'
 
 class App < Sinatra::Base
 
+  p = PigLatinizer.new
+
   get '/' do
     erb :user_input
   end
