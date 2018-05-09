@@ -9,7 +9,7 @@ class PigLatinizer
       piglatinize_word(phrase)
     else
       words = phrase.split(" ")
-      words.collect do |w|
+      words.map! do |w|
         piglatinize_word(w)
       end
       words.join(" ")
