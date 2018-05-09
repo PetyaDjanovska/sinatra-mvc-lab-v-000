@@ -4,7 +4,7 @@ class PigLatinizer
   def initialize
   end
 
-  def piglatinize(word)
+  def piglatinize_word(word)
     vowels = "aeiouAEIOU"
       if vowels.include?(word[0])
         word = word + "way"
