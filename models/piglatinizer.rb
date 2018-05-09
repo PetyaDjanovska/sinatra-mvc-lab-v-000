@@ -1,7 +1,7 @@
 class PigLatinizer
-  
-  def initialize
-  end
+
+  # def initialize
+  # end
 
   def piglatinize(phrase)
     if !phrase.include?(" ")
