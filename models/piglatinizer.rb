@@ -13,6 +13,7 @@ class PigLatinizer
         piglatinize_word(w)
       end
       words.join(" ")
+    end
 
   def piglatinize_word(word)
     vowels = "aeiouAEIOU"
