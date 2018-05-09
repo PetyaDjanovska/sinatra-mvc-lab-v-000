@@ -5,7 +5,7 @@ class PigLatinizer
   end
 
   def piglatinize(phrase)
-    if !phrase.includes?(" ")
+    if !phrase.include?(" ")
       piglatinize_word(phrase)
     else
       words = phrase.split(" ")
