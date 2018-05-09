@@ -8,7 +8,11 @@ class PigLatinizer
     if !phrase.includes?(" ")
       piglatinize_word(phrase)
     else
-      
+      words = phrase.split(" ")
+      words.collect do |w|
+        piglatinize_word(w)
+      end
+      words.join(" ")
 
   def piglatinize_word(word)
     vowels = "aeiouAEIOU"
